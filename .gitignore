@@ -1,0 +1,13 @@
+# Business / legal documents — keep off GitHub
+*.pdf
+*.docx
+*.txt
+meeting_saved_new_chat.txt
+
+# Internal folders
+Coach Reem AI Academy/
+AI_Powered_Airbnb_Host_Guide_FINAL_v3_KC/
+
+# OS
+.DS_Store
+Thumbs.db
