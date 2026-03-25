@@ -584,20 +584,20 @@
     gap: 20px;
   }
   .author-photo {
-    width: 220px; height: 220px;
+    width: 150px; height: 150px;
     border-radius: 50%;
-    background: linear-gradient(145deg, var(--navy-3), var(--faint));
+    overflow: hidden;
     border: 4px solid var(--gold-border);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    margin: 0 auto;
     box-shadow: 0 0 0 8px rgba(201,168,76,.08), var(--shadow-gold);
   }
-  .author-photo svg {
-    width: 90px; height: 90px;
-    color: var(--gold);
-    opacity: .5;
+  .author-logo-img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .author-photo-label {
     font-size: .78rem;
@@ -1237,12 +1237,8 @@
     <div class="author-grid">
 
       <div class="author-photo-wrap fade-in">
-        <div class="author-photo" aria-label="Author photo placeholder">
-          <!-- Silhouette placeholder -->
-          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="50" cy="36" r="18" fill="currentColor"/>
-            <path d="M14 90c0-19.9 16.1-36 36-36s36 16.1 36 36" fill="currentColor"/>
-          </svg>
+        <div class="author-photo">
+          <img src="Executive Key Management logo design.png" alt="Executive Key Management logo" class="author-logo-img">
         </div>
         <span class="author-photo-label">Keila · Executive Key Management</span>
       </div>
