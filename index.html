@@ -794,10 +794,17 @@
   }
   .price-display {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 36px;
+  }
+  .price-consulting {
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: .04em;
   }
   .price-was {
     font-size: 1.2rem;
@@ -808,8 +815,13 @@
   .price-now {
     font-size: 3.2rem;
     font-weight: 900;
-    color: var(--gold);
+    color: #fff;
     line-height: 1;
+  }
+  .price-delivery {
+    font-size: .82rem;
+    color: var(--muted);
+    font-style: italic;
   }
   .price-note {
     font-size: .82rem;
@@ -1401,7 +1413,10 @@
     <p class="price-sub fade-in delay-2">Get the complete AI-powered system, all 10 chapters, and your 90-Day CEO Action Plan — delivered instantly to your device.</p>
 
     <div class="price-display fade-in delay-3">
+      <div class="price-consulting">Consulting rates for this level of expertise start at $500/hr</div>
+      <div class="price-was">$27</div>
       <div class="price-now">$9.99</div>
+      <div class="price-delivery">Instant digital delivery on Amazon</div>
     </div>
 
     <div class="fade-in delay-4">
